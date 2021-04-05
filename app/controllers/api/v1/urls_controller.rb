@@ -8,8 +8,7 @@ class Api::V1::UrlsController < ApplicationController
   def create
     url = Url.new(
       long_url: url_params[:long_url],
-      short_url: "This is a short URL",
-      ip: "Volkans ip."
+      short_url: "This is a short URL"
     )
     if url.save
       # For the time, we are showing the db record to the user

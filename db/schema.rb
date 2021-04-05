@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 2021_04_04_200521) do
   create_table "urls", force: :cascade do |t|
     t.string "long_url"
     t.string "short_url"
-    t.string "ip"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
