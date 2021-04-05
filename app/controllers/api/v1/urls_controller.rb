@@ -21,9 +21,9 @@ class Api::V1::UrlsController < ApplicationController
   end
 
   def show
-    url = Url.find_by(id: params[:id])
+    url = Url.find_by_short_url(params[:short_url])
     if url
-      render json: url, status: 200
+      redirect_to url.long_url
     else
       render json: {error: "Url Not Found."}
     end
