@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_04_200521) do
+ActiveRecord::Schema.define(version: 2021_04_05_053743) do
 
   create_table "urls", force: :cascade do |t|
     t.string "long_url"
