@@ -1,13 +1,15 @@
 # README
 
+This is a simple URL shortening service.
+
 # Installation:
 
 1. Clone the repo
 2. `cd shortenUrl`
 3. Make sure you have Ruby installed (`ruby --version`)
 4. If you are using ruby version controller then install and switch to `2.7.2`
-5. Run `gem install`
-6. Run `yarn install`
+5. Run `bundle install`
+6. Run `npm install`
 
 ## Database creation
 
