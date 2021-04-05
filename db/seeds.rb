@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Url.create([
+    {
+        long_url: "https://www.youtube.com",
+        short_url: "wtrmbv",
+    },
+    {
+        long_url: "https://www.google.com",
+        short_url: "a8tr5y",
+    }
+])
