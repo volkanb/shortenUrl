@@ -8,19 +8,11 @@
 
 Url.create([
     {
-        long_url: "FirstLongUrl",
-        short_url: "FirstShortUrl",
+        long_url: "https://www.youtube.com",
+        short_url: "wtrmbv",
     },
     {
-        long_url: "SecondLongUrl",
-        short_url: "SecondShortUrl",
-    },
-    {
-        long_url: "ThirdLongUrl",
-        short_url: "ThirdShortUrl",
-    },
-    {
-        long_url: "FourthLongUrl",
-        short_url: "FourthShortUrl",
+        long_url: "https://www.google.com",
+        short_url: "a8tr5y",
     }
 ])
