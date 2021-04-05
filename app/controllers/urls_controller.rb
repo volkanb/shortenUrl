@@ -17,7 +17,6 @@ class UrlsController < ApplicationController
     if shortened_url
       redirect_to shortened_url.long_url
     else
-      @url = Url.new(url_params)
       existing_url = Url.find_by_long_url(url_params[:long_url])
       if existing_url
         respond_to do |format|
@@ -25,6 +24,7 @@ class UrlsController < ApplicationController
           format.json { render :show, status: :found, location: existing_url }
         end
       else
+        @url = Url.new(url_params)
         respond_to do |format|
           if @url.save
             format.html { redirect_to @url, notice: "Url was successfully shortened." }
