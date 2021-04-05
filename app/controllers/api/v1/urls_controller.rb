@@ -26,12 +26,11 @@ class Api::V1::UrlsController < ApplicationController
       render json: url, status: 200
     else
       render json: {error: "Url Not Found."}
+    end
   end
 
   private
     def url_params
-      params.require(:url).permit([
-        :long_url
-      ])
+      params.require(:url).permit(:long_url)
     end
 end
