@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Long url:</strong>
+  <%= link_to @url.long_url, @url.long_url %>
+</p>
+
+<p>
+  <strong>Short url:</strong>
+  <%= @url.short_url %>
+</p>
+
+<%= link_to 'Look for another URL', new_url_path %>
